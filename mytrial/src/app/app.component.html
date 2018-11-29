@@ -1,0 +1,13 @@
+<ul>
+  <li *ngFor=" let t of obj" (click)="Hello()">{{t.name}}</li>
+</ul>
+<table class="table table-bordered table-stripped">
+  <thead>
+    <td>Name</td>
+    <td>Location</td>
+  </thead>
+  <tr *ngFor= "let t of obj">
+    <td>{{t.name}}</td>
+    <td>{{t.location}}</td>
+  </tr>
+</table>
