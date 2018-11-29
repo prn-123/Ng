@@ -1,0 +1,6 @@
+<ul class="contacts">
+
+  <li *ngFor = "let c of contacts" (click)="onSelect(c)"><span class="badge">{{c.id}}</span> {{c.name}}</li>
+
+</ul>
+<app-contactdetail [contact]=selectedContact></app-contactdetail>
